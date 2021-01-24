@@ -1,0 +1,66 @@
+https://git-scm.com/
+-----------------------------------
+Version Control System 
+Distributed
+
+#GENERAL
+git --version
+touch index.html
+touch app.js
+code index.html style.css
+code .
+start chrome .
+mkdir <name>
+rmdir
+rm -r <name> // for folder with files
+
+
+#CONFIGURATION
+git config --global user.name "Thusara Senanayake"
+git config --global user.email "thusarasenanayake@gmail.com"
+
+
+#LOCAL
+git init
+git init -b branchName
+git README.md
+$git add <file>  
+git add index.html  //added to staging area
+git add *.html // add any html file
+git rm --cached index.html // removed from staging area
+git add . // adds everything	
+$git status
+git commit // opens vim editor
+# in vim click i, initial commit, esc | :wq   
+
+git commit -m "changed app.js"
+
+#BRANCHING
+git branch login
+// created login.html while on login brach
+
+git checkout login //switch to the branch
+git checkout main
+git merge login //  while on main brach
+
+
+#.GITIGNORE
+touch .gitignore
+// in .gitignore write the file name that you want to ignore
+
+
+#CREATING, CLONING AND REMOVING A REMOTE REPOSITORY USING CLI
+
+git remote // list remote repos
+git remote -v   // Verifies the new remote URL
+git remote add origin https://github.com/Thusara-Senanayake/testing-git.git
+git push -u origin main
+git push // adding to the remote repo 
+git push origin branch1
+
+git clone <link> // download to local
+git clone https://github.com/Thusara-Senanayake/testing-git
+git pull // get updated files from github
+
+git remote remove origin // remove repository
+
