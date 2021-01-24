@@ -1,2 +1,2 @@
-#myapp
-This is my app.
+#testing-git
+Refer 'ref.txt' for commands.
